@@ -72,6 +72,12 @@ export const deleteProgressTaskApi = (task) => {
 }
 // edit
 export const editPlannedTask = (task) => {
-    let Api = baseURL + `todos/updateTask/${task.id}`;
+    let Api = baseURL + `todos/updatePlannedTask/${task.id}`;
+    return makePutCall(Api,task)
+}
+
+// edit
+export const editInprogressApi = (task) => {
+    let Api = baseURL + `todos/updateInProgressTask/${task.id}`;
     return makePutCall(Api,task)
 }

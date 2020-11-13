@@ -44,6 +44,17 @@
   }
   .item h6 {
     margin-bottom: 0.2rem;
+    width: 190px;
+    max-width: 190px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  .item p {
+    margin-bottom: 0.2rem;
+    width: 190px;
+    max-width: 190px;
+    text-overflow: ellipsis;
+    overflow: hidden;
   }
   .strikeoff h6 {
     text-decoration: line-through;
@@ -60,4 +71,35 @@
   .HIGH{
     background-color: red;
     color: white;
+  }
+  /* .task-name{
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .task-name h6 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-left: 28px;
+    padding-right: 0px;
+  }
+  .icon{
+    margin: 0px 10%;
+  } */
+  @media only screen and (max-width: 420px) {
+    .box{
+      width: 340px;
+    }
+    .item{
+      max-width: 300px;
+    }
+  }
+  @media only screen and (max-width: 320px) {
+    .box{
+      width: 280px;
+    }
+    .item{
+      max-width: 250px;
+    }
   }
