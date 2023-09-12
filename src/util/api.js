@@ -1,5 +1,5 @@
 import axios from "axios";
-const baseURL = "http://13.233.82.28:9195/";
+const baseURL = "http://localhost:9195/";
 const makeGetCall = (api) => {
     return axios({
         url: api,
